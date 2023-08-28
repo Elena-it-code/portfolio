@@ -42,8 +42,6 @@ export const Contacts = () => {
                         </SocialItem>
 
             </SocialList>
-
-                <SmailTitle>Like me on LinkedIn, Instagram, Behance, Dribble</SmailTitle>
             </FlexWrapper>
         </StyledContacts>
     );
@@ -66,9 +64,5 @@ const SocialItem = styled.li`
 `
 
 const SocialLink = styled.a`
-
-`
-
-const SmailTitle = styled.h5`
 
 `
