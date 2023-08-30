@@ -12,7 +12,6 @@ export const Footer = () => {
 const StyledFooter = styled.footer`
 display: flex;
   justify-content: center;
-  background-color: coral;
 `
 const StyledCopyright = styled.small`
 

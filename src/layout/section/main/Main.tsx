@@ -30,7 +30,6 @@ export const Main = () => {
 
 const StyledMain = styled.div`
   min-height: 100vh; // на всю высоту экрана будет наш стилизованный компонент
-  background-color: aliceblue;
   
 `
 const MainTitle = styled.h1` // создали стилизованную компоненту для стилизации нашего тэга <h1>UX | UI designer 24 years old, Minsk</h1>

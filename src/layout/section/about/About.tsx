@@ -14,7 +14,6 @@ export const About = () => {
 };
 
 const StyledSectionAbout = styled.section`
-  background-color: rgba(50, 73, 220, 0.31);
   min-height: 100vh;
 `
 
