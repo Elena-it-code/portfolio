@@ -28,12 +28,9 @@ export const Menu = () => {
 const StyledMenu = styled.nav`
  ul {
    display: flex;
-   gap: 30px;
-   justify-content: center;
+   gap: 150px;
+   justify-content: space-between;
+   //justify-items: stretch;
  }
-  li {
-    list-style-type: none;
-    
-  }
 `
 
