@@ -8,19 +8,19 @@ export const Menu = () => {
             <StyledMenu>
                 <ul>
                     <StyledListItem>
-                        <Link href="">Home</Link>
+                        <Link href="#">Home</Link>
                     </StyledListItem>
                     <StyledListItem>
-                        <Link href="">About me</Link>
+                        <Link href="#">About me</Link>
                     </StyledListItem>
                     <StyledListItem>
-                        <Link href="">Skills</Link>
+                        <Link href="#">Skills</Link>
                     </StyledListItem>
                     <StyledListItem>
-                        <Link href="">Portfolio</Link>
+                        <Link href="#">Portfolio</Link>
                     </StyledListItem>
                     <StyledListItem>
-                        <Link href="">Contacts</Link>
+                        <Link href="#">Contacts</Link>
                     </StyledListItem>
                 </ul>
             </StyledMenu>
@@ -30,7 +30,7 @@ export const Menu = () => {
 const StyledMenu = styled.nav`
  ul {
    display: flex;
-   gap: 150px;
+   gap: 140px;
    justify-content: space-between;
    //justify-items: stretch;
    padding: 30px 0px;
@@ -46,6 +46,11 @@ const Link = styled.a`
   font-family: 'Gilroy', sans-serif;
   font-size: 18px;
   font-weight: bold;
+
+  &:active {
+    color: ${theme.colors.font};
+  }
+  
   &:hover {
     color: ${theme.colors.accent};/* Цвет ссылки при наведении */
   }
