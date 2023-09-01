@@ -29,6 +29,10 @@ export const GlobalStyle = createGlobalStyle`
     list-style: none;
   }
   
+  //li {
+  //  color: #828282;
+  //}
+  
   button {
     background-color: unset;
     border: none;
