@@ -40,10 +40,10 @@ export const GlobalStyle = createGlobalStyle`
   }
   
   section:nth-of-type(odd) {
-    background-color: ${theme.colors.primaryBg};
+    background-color: ${theme.colors.backgroundSection};
   }
 
   section:nth-of-type(even) {
-    background-color: ${theme.colors.secondaryBg};
+    background-color: ${theme.colors.primaryBg};
   }
 `
