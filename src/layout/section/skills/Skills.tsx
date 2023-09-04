@@ -4,10 +4,12 @@ import {FlexWrapper} from "../../../components/FlexWrapper";
 import {SectionTitle} from "../../../components/SectionTitle";
 import {Skill} from "./skill/Skill";
 import {SubTitle} from "../../../components/SubTitle";
+import {Container} from "../../../components/Container";
 
 export const Skills = () => {
     return (
         <StyledSkills>
+            <Container>
             <SectionTitle>Skills</SectionTitle>
             <SubTitle>I work in such programs as</SubTitle>
             <FlexWrapper wrap={"wrap"} justify={"space-between"}>
@@ -35,11 +37,11 @@ export const Skills = () => {
                 <Skill iconId ={"vscode"}
                        title={"Visual Studio Code"}/>
             </FlexWrapper>
+            </Container>
         </StyledSkills>
     );
 };
 
 const StyledSkills = styled.section`
-    background-color: #f1f6e6;
-    min-height: 100vh; // !!! всегда лучше использовать min для блочных элементов !!!
+  min-height: 690px; // !!! всегда лучше использовать min для блочных элементов !!!
 `
