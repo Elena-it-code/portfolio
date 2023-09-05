@@ -14,25 +14,25 @@ export const Skills = () => {
             <SubTitle>I work in such programs as</SubTitle>
             <FlexWrapper wrap={"wrap"} justify={"space-between"}>
                 <Skill iconId ={"html"}
-                       title={"html5"}/>
+                       title={"Html5"}/>
 
                 <Skill iconId ={"css"}
-                       title={"css3"}/>
+                       title={"Css3"}/>
 
                 <Skill iconId ={"js"}
-                       title={"javascript"}/>
+                       title={"Javascript"}/>
 
                 <Skill iconId ={"react"}
-                       title={"react"}/>
+                       title={"React"}/>
 
                 <Skill iconId ={"greensock"}
                        title={"GreenSock"}/>
 
                 <Skill iconId ={"git"}
-                       title={"git"}/>
+                       title={"Git"}/>
 
                 <Skill iconId ={"github"}
-                       title={"github"}/>
+                       title={"Github"}/>
 
                 <Skill iconId ={"vscode"}
                        title={"Visual Studio Code"}/>
@@ -43,5 +43,5 @@ export const Skills = () => {
 };
 
 const StyledSkills = styled.section`
-
+  margin-bottom: -30px;
 `

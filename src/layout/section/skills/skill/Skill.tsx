@@ -1,7 +1,7 @@
 import React from 'react';
 import {Icon} from "../../../../components/icon/Icon";
 import styled from "styled-components";
-import {SectionTitle} from "../../../../components/SectionTitle";
+import {theme} from "../../../../styles/Theme";
 
 
 type SkillPropsType = {
@@ -20,11 +20,13 @@ export const Skill = (props:SkillPropsType) => {
 };
 
 const StyledSkill = styled.div`
-  width: 22%;
-  //background-color: #eee4b4;
-  margin: 10px;
+  width: 200px;
+  padding: 30px 10px;
   text-align: center;
 `
-const SkillTitle = styled.h3`
-
+const SkillTitle = styled.h4`
+  font-family: Gilroy-Bold, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: ${theme.colors.secondaryBg};
 `
