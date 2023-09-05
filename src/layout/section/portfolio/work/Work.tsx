@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 import {text} from "stream/consumers";
+import {theme} from "../../../../styles/Theme";
 
 
 type WorkPropsType = {
@@ -18,20 +19,27 @@ export const Work = (props: WorkPropsType) => {
 };
 
 const StyledWork = styled.div`
-  background-color: #eeec3a;
   max-width: 940px;
   width: 100%;
-  margin-bottom: 100px;
+  margin-top: 10px;
+  text-align: center;
+  font-family: Gilroy-Medium, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration-line: underline;
 `
 const Image = styled.img`
   width: 100%;
   height: 520px;
   object-fit: cover;
+  //margin-top: 100px;
   
 `
 const Link = styled.a`
   //justify-content: center;
   display: block;  
   text-align:center;
-  margin-top: 45px;
+  margin-top: 35px;
+  margin-bottom: 90px;
+  color: ${theme.colors.font};
 `

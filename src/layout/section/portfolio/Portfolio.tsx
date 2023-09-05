@@ -6,13 +6,14 @@ import {Work} from "./work/Work";
 import fashionStore from "../../../assets/images/portfolio/fashion_web.png"
 import reebokStore from "../../../assets/images/portfolio/reebok_web.png"
 import braunLandingPage from "../../../assets/images/portfolio/braun_web.png"
+import {Container} from "../../../components/Container";
 
 
 
 export const Portfolio = () => {
     return (
         <StyledPortfolio>
-
+            <Container>
             <SectionTitle>Portfolio</SectionTitle>
 
             <FlexWrapper justify={"space-around"}>
@@ -26,14 +27,12 @@ export const Portfolio = () => {
             <FlexWrapper justify={"space-around"}>
                 <Work src={braunLandingPage} text={"Braun Landing Page - Concept"}/>
             </FlexWrapper>
-
+            </Container>
         </StyledPortfolio>
     );
 };
 
 const StyledPortfolio = styled.section` 
-    min-height: 100vh;
-  background-color: #c8eee9;
-
+    margin-bottom: -90px;
 `
 
