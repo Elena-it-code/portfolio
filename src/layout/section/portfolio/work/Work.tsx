@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from "styled-components";
-import {text} from "stream/consumers";
 import {theme} from "../../../../styles/Theme";
 
 
@@ -32,11 +31,9 @@ const Image = styled.img`
   width: 100%;
   height: 520px;
   object-fit: cover;
-  //margin-top: 100px;
   
 `
 const Link = styled.a`
-  //justify-content: center;
   display: block;  
   text-align:center;
   margin-top: 35px;
