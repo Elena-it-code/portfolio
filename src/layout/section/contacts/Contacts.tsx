@@ -5,14 +5,16 @@ import {SubTitle} from "../../../components/SubTitle";
 import {Icon} from "../../../components/icon/Icon";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Button} from "./Button";
+import {Container} from "../../../components/Container";
 
 
 export const Contacts = () => {
     return (
         <StyledContacts>
+            <Container>
             <FlexWrapper direction={"column"} align={"center"}>
                 <SectionTitle>Contacts</SectionTitle>
-                <SubTitle>Want to know more or just chat? You are welcome!</SubTitle>
+                <SubTitle>Want to know more or just chat?<br/> You are welcome!</SubTitle>
                 <Button type={"submit"}>Send message</Button>
 
                     <SocialList>
@@ -43,13 +45,13 @@ export const Contacts = () => {
 
             </SocialList>
             </FlexWrapper>
+            </Container>
         </StyledContacts>
     );
 };
 
 const StyledContacts = styled.section`
-    background-color: #75eec9;
-    min-height: 100vh;
+    
 `
 
 const SocialList = styled.ul`
@@ -60,6 +62,7 @@ gap: 60px;
 
 const SocialItem = styled.li`
   list-style-type: none;
+  margin-top: 90px;
   
 `
 

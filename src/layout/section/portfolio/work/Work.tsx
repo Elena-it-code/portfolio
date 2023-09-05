@@ -20,7 +20,7 @@ export const Work = (props: WorkPropsType) => {
 const StyledWork = styled.div`
   max-width: 940px;
   width: 100%;
-  margin-top: 10px;
+  margin-top: 30px;
   text-align: center;
   font-family: Gilroy-Medium, sans-serif;
   font-size: 18px;
