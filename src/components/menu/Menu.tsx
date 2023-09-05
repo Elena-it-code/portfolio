@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
 import {theme} from "../../styles/Theme";
-import {Separator} from "../../layout/section/separator/Separator";
 
 export const Menu = () => {
     return (
@@ -33,9 +32,22 @@ const StyledMenu = styled.nav`
    gap: 145px;
    justify-content: space-between;
    //justify-items: stretch;
-   padding: 30px 0px;
-   border-bottom: 2px solid ${theme.colors.secondaryBg};
+   margin-top: 10px;
    
+   position: relative;
+   
+   &::before {
+     content: "";
+     display: inline-block;
+     width: 940px;
+     height: 2px;
+     background-color: ${theme.colors.secondaryBg};
+     
+     position: absolute;
+     left: 50%;
+     bottom: -25px;
+     transform: translateX(-50%);
+   }
  }
 `
 const StyledListItem = styled.li`
