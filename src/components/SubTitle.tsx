@@ -7,5 +7,5 @@ export const SubTitle = styled.h3`
   font-style: normal;
   font-weight: 500;
   
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 `

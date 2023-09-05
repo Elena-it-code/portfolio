@@ -43,5 +43,5 @@ export const Skills = () => {
 };
 
 const StyledSkills = styled.section`
-  min-height: 690px; // !!! всегда лучше использовать min для блочных элементов !!!
+
 `

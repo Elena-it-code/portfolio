@@ -30,11 +30,12 @@ export const Menu = () => {
 const StyledMenu = styled.nav`
  ul {
    display: flex;
-   gap: 140px;
+   gap: 145px;
    justify-content: space-between;
    //justify-items: stretch;
    padding: 30px 0px;
    border-bottom: 2px solid ${theme.colors.secondaryBg};
+   
  }
 `
 const StyledListItem = styled.li`

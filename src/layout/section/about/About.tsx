@@ -19,7 +19,5 @@ export const About = () => {
 };
 
 const StyledSectionAbout = styled.section`
-  min-height: 500px;
+    margin-bottom: -30px;
 `
-
-// вместо section выдает ошибку TS1005 , EXPETED
