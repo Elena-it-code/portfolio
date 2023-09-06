@@ -1,18 +1,24 @@
 import React from 'react';
 import styled from "styled-components";
 import {theme} from "../../styles/Theme";
+import {Container} from "../../components/Container";
+import {FlexWrapper} from "../../components/FlexWrapper";
 
 export const Footer = () => {
     return (
         <StyledFooter>
-<StyledCopyright>Like me on<br/>LinkedIn, Instagram, Behance, Dribble</StyledCopyright>
+            <Container>
+                <FlexWrapper justify={"center"}>
+                    <StyledCopyright>Like me on<br/>LinkedIn, Instagram, Behance, Dribble</StyledCopyright>
+                </FlexWrapper>
+            </Container>
         </StyledFooter>
     );
 };
 
 const StyledFooter = styled.footer`
-  display: flex;
-  justify-content: center;
+  ///display: flex;
+  //justify-content: center;
   margin-top: -90px;
   margin-bottom: 120px;
 `
@@ -22,4 +28,5 @@ const StyledCopyright = styled.small`
   font-size: 14px;
   font-weight: 400;
   color: ${theme.colors.secondaryBg};
+
 `
