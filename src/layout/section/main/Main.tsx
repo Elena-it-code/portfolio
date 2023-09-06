@@ -4,29 +4,30 @@ import photo from "../../../assets/images/main_screen/main_screen.png" // !!! в
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Container} from "../../../components/Container";
 import {theme} from "../../../styles/Theme";
+
 export const Main = () => {
     return (
         <StyledMain>
             <Container>
-            <FlexWrapper align={"center"} justify={"space-between"} wrap={"wrap"}>
-                <div>
-                    <Name>Denis<br/>Novik</Name>
-                </div>
+                <FlexWrapper align={"center"} justify={"space-between"} wrap={"wrap"}>
+                    <div>
+                        <Name>Denis<br/>Novik</Name>
+                    </div>
 
-                <div>
-                    <MainTitle>UX | UI designer<br/>24 years old, Minsk</MainTitle>
-                </div>
+                    <div>
+                        <MainTitle>UX | UI designer<br/>24 years old, Minsk</MainTitle>
+                    </div>
 
-                <div>
-                    <Language><Link href={"#"}>RU</Link> | <Link href={"#"}>ENG</Link></Language>
-                </div>
-            {/*</FlexWrapper>*/}
+                    <div>
+                        <Language><Link href={"#"}>RU</Link> | <Link href={"#"}>ENG</Link></Language>
+                    </div>
+                    {/*</FlexWrapper>*/}
 
-            {/*<FlexWrapper align={"center"} justify={"space-around"}>*/}
-                {/*<div>*/}
+                    {/*<FlexWrapper align={"center"} justify={"space-around"}>*/}
+                    {/*<div>*/}
                     <Photo src={photo} alt=""/>
-                {/*</div>*/}
-            </FlexWrapper>
+                    {/*</div>*/}
+                </FlexWrapper>
             </Container>
         </StyledMain>
     );
@@ -35,8 +36,8 @@ export const Main = () => {
 
 const StyledMain = styled.div`
   display: flex;
-  min-height: 100vh;
-  
+  min-height: 780px;
+
 `
 
 const MainTitle = styled.h1` // создали стилизованную компоненту для стилизации нашего тэга <h1>UX | UI designer 24 years old, Minsk</h1>
@@ -47,7 +48,7 @@ const MainTitle = styled.h1` // создали стилизованную ком
   font-weight: 400;
   margin-top: 40px;
   margin-left: -50px;
-  
+
 `
 
 const Name = styled.h2` // создали стилизованную компоненту для стилизации нашего тэга <h2>Denis Novik</h2>
@@ -88,7 +89,7 @@ const Photo = styled.img`
   width: 940px;
   height: 390px;
   margin-top: -90px;
-  margin-left: -15px;
+
+  //margin-left: -15px;
   
-  //flex-shrink: 0;
 `
